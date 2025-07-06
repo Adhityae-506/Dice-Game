@@ -1,0 +1,102 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+  /* margin-inline-start: 40px; */
+  width: 300px;
+  height: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+body {
+  background: #b5b5b5;
+  background: radial-gradient(
+    circle,
+    rgba(181, 181, 181, 1) 10%,
+    rgba(138, 108, 168, 1) 100%
+  );
+}
+h1 {
+  margin: 20px;
+  border-spacing: 20px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #4ecca3;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #3d0301;
+  font-family: "Indie Flower", cursive;
+}
+
+img {
+  width: 80%;
+}
+
+.btn {
+  text-align: center;
+  margin: 40px 0;
+}
+#myButton {
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "offside", cursive;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+#myButton:hover {
+  background-color: #3cb58f;
+  transform: scale(1.05);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.roll {
+  animation: spin 0.5s ease-in-out;
+}
+.offside-regular {
+  font-family: "Offside", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  margin-top: 5%;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 2rem;
+  color: #152d35;
+}
+footer a {
+  background: linear-gradient(
+    90deg,
+    rgba(60, 8, 94, 1) 20%,
+    rgba(255, 5, 5, 1) 50%,
+    rgba(255, 149, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
